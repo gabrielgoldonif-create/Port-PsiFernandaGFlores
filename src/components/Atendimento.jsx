@@ -6,8 +6,7 @@ function Atendimento() {
       em diferentes períodos do dia, possibilitando maior flexibilidade para o acompanhamento psicológico.</p>
 
       <div className="home-texto">
-  ...
-  <img src="/flor.png" className="icone-flor" />
+  <img src="/logo.png" className="logo" />
 </div>
 
     </section>

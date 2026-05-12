@@ -3,7 +3,6 @@ import Header from "./components/Header"
 import Home from "./components/Home"
 import Sobre from "./components/Sobre"
 import Atendimento from "./components/Atendimento"
-import Projetos from "./components/Projetos"
 import Contato from "./components/Contato"
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Home />
       <Sobre />
       <Atendimento />
-      <Projetos />
       <Contato />
     </>
   )

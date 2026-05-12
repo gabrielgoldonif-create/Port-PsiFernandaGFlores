@@ -5,8 +5,7 @@ function Contato() {
       <p>Formas de entrar em contato.</p>
 
      <div className="home-texto">
-  ...
-  <img src="/flor.png" className="icone-flor" />
+  <img src="/logo.png" className="logo" />
 </div> 
     </section>
   )

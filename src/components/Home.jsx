@@ -12,8 +12,8 @@ function Home() {
       </div>
 
        <div className="home-texto">
-  ...
-  <img src="/flor.png" className="icone-flor" />
+        
+  <img src="/logo.png" className="logo" />
 </div>
 
     </section>
