@@ -1,12 +1,15 @@
 function Contato() {
   return (
-    <section>
+    <section id="contato">
       <h2>Contato</h2>
+
       <p>Formas de entrar em contato.</p>
 
-     <div className="home-texto">
-  <img src="/logo.png" className="logo" />
-</div> 
+      <img
+        src="/Port-PsiFernandaGFlores/logo.png"
+        className="icone-card"
+        alt="Logo"
+      />
     </section>
   )
 }

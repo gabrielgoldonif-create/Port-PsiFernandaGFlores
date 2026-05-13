@@ -2,21 +2,24 @@
   width: 100%;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 24px 80px;
+
   background-color: var(--azul);
+
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-header h2 {
-  color: white;
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
+.logo {
+  width: 150px;
 }
 
 nav {
@@ -27,20 +30,27 @@ nav {
 nav a {
   color: white;
   font-size: 16px;
+
   position: relative;
+
   padding-bottom: 4px;
 }
 
-/* hover elegante */
+/* Hover */
 
 nav a::after {
   content: "";
+
   position: absolute;
+
   left: 0;
   bottom: -4px;
+
   width: 0%;
   height: 2px;
+
   background: var(--terracota);
+
   transition: 0.3s;
 }
 
@@ -48,12 +58,15 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* SEÇÕES */
+/* =========================
+   SEÇÕES
+========================= */
 
 section {
-  padding: 80px;
-  margin: 60px auto;
   max-width: 1000px;
+
+  margin: 60px auto;
+  padding: 80px;
 
   background-color: white;
 
@@ -62,12 +75,23 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* TITULOS */
+/* Hover suave */
+
+section:hover {
+  transform: translateY(-3px);
+  transition: 0.25s ease;
+}
+
+/* =========================
+   TITULOS
+========================= */
 
 section h1,
 section h2 {
   color: var(--azul);
+
   font-family: "Playfair Display", serif;
+
   margin-bottom: 18px;
 }
 
@@ -77,42 +101,167 @@ section h1 {
 
 section h2 {
   font-size: 34px;
+
   position: relative;
+
   display: inline-block;
 }
 
-/* LINHA DECORATIVA */
+/* Linha decorativa */
 
 section h2::after {
   content: "";
+
   display: block;
+
   width: 60px;
   height: 2px;
-  background: var(--terracota);
+
   margin-top: 10px;
+
+  background: var(--terracota);
 }
 
-/* TEXTO */
+/* =========================
+   TEXTOS
+========================= */
 
 section p {
   max-width: 650px;
+
   line-height: 1.7;
   font-size: 16px;
 }
 
-/* HOVER SUAVE */
-
-section:hover {
-  transform: translateY(-3px);
-  transition: 0.25s ease;
-}
+/* =========================
+   HOME
+========================= */
 
 .home-texto {
   position: relative;
 }
 
-.logo {
-  width: 80px;
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 48px;
+}
+
+.sobre-texto {
+  flex: 1;
+}
+
+.foto-sobre {
+  width: 60%;
+  height: auto;
+
+  object-fit: contain;
+
+  animation: fadeIntro 2.2s ease;
+}
+
+/* =========================
+   ÍCONES
+========================= */
+
+.icone-card {
+  width: 28px;
+}
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+
+@keyframes aparecerFoto {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIntro {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 48px;
+}
+
+.home-texto {
+  flex: 1;
+}
+
+.home-imagem {
+  background: #e9dfd2;
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.foto-home {
+  width: 260px;
+
   display: block;
-  margin: 10px auto 0;
+
+  border-radius: 24px;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+  margin-top: 28px;
+
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 14px;
+
+  background-color: var(--terracota);
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+button:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.92;
 }
